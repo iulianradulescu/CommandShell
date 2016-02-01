@@ -23,8 +23,9 @@ public class Shell {
     public Shell() {
     }
 
-    private String handleInput() {
-        String commandLine = device.readLine("> ");
+    private String handleInput( ) {
+        device.promptToUser( );
+        String commandLine = device.readLine( null );
 
         return commandLine;
     }
@@ -32,7 +33,8 @@ public class Shell {
     public void start() {
         
         while ( true ) {
-            
+            String cmd = handleInput( );
+            device.print("CMD is %s", cmd);
         }
     }
 }

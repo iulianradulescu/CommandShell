@@ -5,8 +5,6 @@
  */
 package com.mastermind.shell.device;
 
-import org.springframework.stereotype.Component;
-
 /**
  *
  * @author iulian.radulescu

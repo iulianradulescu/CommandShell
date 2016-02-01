@@ -18,6 +18,6 @@ public abstract class TextDevice {
     abstract public TextDevice print(String format, String args);
 
     public TextDevice promptToUser() {
-        return print(USER_PROMPT, null);
+        return print("\n%s", USER_PROMPT);
     }
 }
