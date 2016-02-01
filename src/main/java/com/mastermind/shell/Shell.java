@@ -18,10 +18,10 @@ public class Shell {
     @Autowired
     private TextDevice device;
 
+    @Autowired
     private ShellContext context;
 
-    public Shell() {
-    }
+    public Shell() { }
 
     private String handleInput( ) {
         device.promptToUser( );

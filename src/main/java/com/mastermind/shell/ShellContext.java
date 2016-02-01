@@ -5,10 +5,14 @@
  */
 package com.mastermind.shell;
 
+import org.springframework.stereotype.Component;
+
 /**
  *
  * @author iulian.radulescu
  */
+@Component
 public class ShellContext {
-
+    
+    
 }
