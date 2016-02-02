@@ -32,7 +32,7 @@ public class StandardTextDevice extends TextDevice {
     }
 
     @Override
-    public TextDevice print(String format, String args) {
+    public TextDevice print(String format, Object... args) {
         output.printf(format, args);
         return this;
     }

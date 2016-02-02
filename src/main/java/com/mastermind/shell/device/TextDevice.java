@@ -15,7 +15,7 @@ public abstract class TextDevice {
     public static final String USER_PROMPT = "> ";
 
     abstract public String readLine(String label);
-    abstract public TextDevice print(String format, String args);
+    abstract public TextDevice print(String format, Object... args);
 
     public TextDevice promptToUser() {
         return print("\n%s", USER_PROMPT);
